@@ -2,10 +2,23 @@ import { DECREMENT, INCREMENT } from "../action";
 
 const initialState = {
   count: 0,
-  name: "asd"
+  name: "asd",
 };
 
-const rootReducer = (state = initialState, action) => {
+export interface stateType {
+  count: number;
+  name: string;
+}
+
+export interface actionType {
+  type: string;
+  payload: string;
+}
+
+const rootReducer = (
+  state: stateType = initialState,
+  action: actionType
+): stateType => {
   console.log(state, action);
   switch (action.type) {
     case INCREMENT:
