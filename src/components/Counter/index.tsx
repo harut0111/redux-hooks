@@ -6,12 +6,16 @@ import {
   incrementByAmount,
   selectCount,
 } from "../Counter/counterSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { useAppDispatch } from "../../app/hooks";
 
 const Counter: React.FC = () => {
   const [amount, setAmount] = React.useState("");
   const count = useSelector(selectCount);
-  const dispatch = useDispatch();
+  // const count = useAppSelector((state) => state.counter.count);
+
+  // const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   return (
     <main>
