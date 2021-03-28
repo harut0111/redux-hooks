@@ -27,16 +27,6 @@
     "lint": "eslint --fix --ext .ts,.tsx .",
     "prettify": "prettier --write ."
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown",
-    "*.{ts,tsx}": "eslint --cache --fix",
-    "*.{ts,tsx,css,md}": "prettier --write"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -69,5 +59,15 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.{ts,tsx,css,md}": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
