@@ -35,7 +35,7 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
     "*.{ts,tsx}": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{ts,tsx,css,md}": "prettier --write"
   },
   "eslintConfig": {
     "extends": [

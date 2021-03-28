@@ -27,8 +27,6 @@ const rootReducer = (
 
 
 
-  
-
 
 
   switch (action.type) {
