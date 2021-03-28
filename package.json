@@ -27,6 +27,11 @@
     "lint": "eslint --fix --ext .ts,.tsx .",
     "prettify": "prettier --write ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
     "*.{ts,tsx}": "eslint --cache --fix",
