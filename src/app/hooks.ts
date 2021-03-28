@@ -13,3 +13,5 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 //   AnyAction
 // > = () => useDispatch<AppDispatch>();
 // https://stackoverflow.com/questions/59800913/type-safe-usedispatch-with-redux-thunk
+
+// https://redux.js.org/recipes/usage-with-typescript
