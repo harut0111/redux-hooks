@@ -19,7 +19,12 @@ const rootReducer = (
   state: stateType = initialState,
   action: actionType
 ): stateType => {
-  console.log(state, action);
+  console.log(state, action)
+
+
+
+
+  
   switch (action.type) {
     case INCREMENT:
       return { ...state, count: state.count + 1 };
