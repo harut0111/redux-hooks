@@ -15,7 +15,7 @@ export interface actionType {
   payload: string;
 
 
-  
+
 }
 
 const rootReducer = (
@@ -25,6 +25,9 @@ const rootReducer = (
   console.log(state, action)
 
 
+
+
+  
 
 
 
