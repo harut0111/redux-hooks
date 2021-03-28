@@ -13,6 +13,8 @@ export interface stateType {
 export interface actionType {
   type: string;
   payload: string;
+
+  
 }
 
 const rootReducer = (
@@ -24,7 +26,7 @@ const rootReducer = (
 
 
 
-  
+
   switch (action.type) {
     case INCREMENT:
       return { ...state, count: state.count + 1 };
